@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -6,12 +7,14 @@ body {
     color: #333;
     line-height: 1.6;
 }
+
+/* Header Styles */
 header {
     background-color: #0056a6;
     color: white;
     padding: 20px;
     text-align: center;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -20,6 +23,8 @@ header h1 {
     font-size: 2.5em;
     margin: 0;
 }
+
+/* Navigation Styles */
 nav {
     margin-top: 10px;
 }
@@ -33,10 +38,14 @@ nav a {
 nav a:hover {
     color: #ffcb05;
 }
+
+/* Main Content Styles */
 main {
     padding: 20px;
     text-align: center;
 }
+
+/* Section Styles */
 section {
     margin: 40px 0;
     padding: 20px;
@@ -49,16 +58,20 @@ section h2 {
     color: #0056a6;
     margin-bottom: 20px;
 }
+
+/* Image Container Styles */
 .image-container {
     margin: 20px 0;
     text-align: center;
 }
 .image-container img {
-    max-width: 100%;
+    max-width: 25%; /* Ajusta el porcentaje según sea necesario */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/* List Styles */
 ul {
     list-style: none;
     padding: 0;
@@ -67,6 +80,8 @@ ul li {
     margin: 10px 0;
     font-size: 1.2em;
 }
+
+/* Footer Styles */
 footer {
     background-color: #0056a6;
     color: white;
