@@ -87,3 +87,12 @@ footer p {
     margin: 0;
     font-size: 0.9em;
 }
+
+.image-container img {
+    max-width: 30%; /* Reduce el tamaño máximo al 60% del ancho del contenedor */
+    height: auto; /* Mantiene las proporciones */
+    margin: 0 auto; /* Centra la imagen */
+    display: block; /* Asegura que la imagen sea un bloque centrado */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
