@@ -13,29 +13,55 @@ html {
 }
 
 header {
-    position: fixed; /* Fija el encabezado en la parte superior */
+    position: fixed;
     top: 0;
-    width: 100%; /* Asegura que ocupe todo el ancho */
+    width: 100%;
     background-color: #0056a6;
     color: white;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 20px 0; /* Ajusta el padding */
+    padding: 20px 0; /* Espaciado superior e inferior */
 }
 
 .header-container {
     display: flex;
-    align-items: center;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    padding: 10px 20px; /* Ajusta el espaciado */
+    flex-direction: column; /* Cambia a columna para centrar verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    gap: 10px; /* Añade espacio entre el logo y el título */
 }
 
 .logo img {
-    max-width: 100px; /* Tamaño del logo */
+    max-width: 80px; /* Ajusta el tamaño del logo */
     height: auto;
-    margin-right: 10px; /* Espaciado entre logo y texto */
 }
+
+.title h1 {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center; /* Centra los enlaces del menú */
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcb05;
+}
+
+
 
 .title h1 {
     font-size: 2em;
@@ -44,21 +70,6 @@ header {
     text-align: center; /* Asegura que el texto se alinee al centro */
 }
 
-/* Navigation Styles */
-nav {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espaciado entre los enlaces */
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-}
 
 nav a:hover {
     color: #ffcb05; /* Color de hover */
@@ -72,18 +83,18 @@ main {
 
 /* Section Styles */
 section {
-    margin: 40px 0;
+    margin: 60px auto;
     padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    scroll-margin-top: 100px; /* Compensa la altura del header fijo */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px; /* Limita el ancho máximo */
+    text-align: center;
 }
-
 section h2 {
     font-size: 2em;
     color: #0056a6;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /* Footer Styles */
@@ -135,3 +146,50 @@ ul {
     background-color: #1EBE57;
     transform: scale(1.05); /* Animación al pasar el ratón */
 }
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    section {
+        padding: 15px;
+    }
+    .whatsapp-float {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    .whatsapp-float img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
