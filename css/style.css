@@ -102,6 +102,13 @@ footer p {
     margin: 0;
     font-size: 0.9em;
 }
+ul {
+    list-style: disc; /* Asegura que los puntos se muestren */
+    list-style-position: inside; /* Los puntos estarán dentro del contenedor */
+    text-align: center; /* Centra todo el contenido de la lista */
+    padding: 0; /* Elimina relleno adicional */
+    margin: 0 auto; /* Centra la lista */
+}
 
 .image-container img {
     max-width: 10%; /* Reduce el tamaño máximo */
