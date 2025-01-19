@@ -8,49 +8,52 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styles */
-header {
-    position: fixed;
-    background-color: #0056a6;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-}
-header h1 {
-    font-size: 2.5em;
-    margin: 0;
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
 }
 
-html {
-    scroll-behavior: smooth;
+/* Header Styles */
+header {
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    background-color: #0056a6;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añade una sombra */
+    text-align: center;
+    padding: 10px 0; /* Reduce el padding */
+}
+
+header h1 {
+    font-size: 1.8em;
+    margin: 0;
 }
 
 /* Navigation Styles */
 nav {
     margin-top: 10px;
-    padding: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre los enlaces */
 }
+
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
+    font-size: 1.1em;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s ease-in-out;
 }
+
 nav a:hover {
-    color: #ffcb05;
+    color: #ffcb05; /* Color de hover */
 }
 
 /* Main Content Styles */
 main {
-    padding: 20px;
+    padding: 120px 20px 20px; /* Compensa la altura del header fijo */
     text-align: center;
-    padding-top: 120px;
 }
 
 /* Section Styles */
@@ -61,32 +64,11 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 section h2 {
     font-size: 2em;
     color: #0056a6;
     margin-bottom: 20px;
-}
-
-/* Image Container Styles */
-.image-container {
-    margin: 20px 0;
-    text-align: center;
-}
-.image-container img {
-    max-width: 25%; /* Ajusta el porcentaje según sea necesario */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* List Styles */
-ul {
-    list-style: none;
-    padding: 0;
-}
-ul li {
-    margin: 10px 0;
-    font-size: 1.2em;
 }
 
 /* Footer Styles */
@@ -100,6 +82,7 @@ footer {
     width: 100%;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
+
 footer p {
     margin: 0;
     font-size: 0.9em;
